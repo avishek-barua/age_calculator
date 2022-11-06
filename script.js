@@ -81,8 +81,25 @@ daySelect.onchange = function () {
 
 const selectDate = document.getElementById('calender');
 
-selectDate.onchange = function(){
-    yearSelect.value = (selectDate.value).split('-')[0];
-    monthSelect.value = months[((selectDate.value).split('-')[1])-1];
-    daySelect.value = (selectDate.value).split('-')[2];
+selectDate.onchange = function () {
+    // yearSelect.value = (selectDate.value).split('-')[0];
+    // monthSelect.value = months[((selectDate.value).split('-')[1])-1];
+    // daySelect.value = (selectDate.value).split('-')[2];
+    let year = (selectDate.value).split('-')[0];
+    let month = months[((selectDate.value).split('-')[1]) - 1];
+    let day = (selectDate.value).split('-')[2];
+
+    console.log(year);
+    console.log(month);
+    console.log(day);
+
+
+    yearSelect.value = year;
+    monthSelect.value = month;
+    if (day < 10) {
+        day = day%10;
+        daySelect.value = day;
+    }else{
+        daySelect.value = day;
+    }
 }
