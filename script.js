@@ -99,7 +99,9 @@ selectDate.onchange = function () {
     if (day < 10) {
         day = day%10;
         daySelect.value = day;
+        previousDay = daySelect.value
     }else{
         daySelect.value = day;
+        previousDay = daySelect.value
     }
 }
