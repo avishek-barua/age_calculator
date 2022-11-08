@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Age Calculator 2</title>
+	<link href="./styles/vanilla-calendar.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <label for="Day">Day</label>
-    <select name="day" id="day"></select>
-    <label for="month">Month</label>
-    <select name="month" id="month"></select>
-    <label for="year">Year</label>
-    <select name="year" id="year"></select>
-    <input type="date" name="calender" id="calender">
+    
+    <div class="age-calculator">       
+        <div class="heading">
+            <h4>Age Calculator</h4>
+        </div>
+        <div class="calculator-body">
+            <div class="input">
+                <div class="date-of-birth">
+                    <label for="">Date of Birth</label>
+                    <select name="month" id="month"></select>
+                    <select name="day" id="day"></select>
+                    <input name="year" id="year"></input>
+                    <!-- <img src="images/Group 14.png" alt="" class="calendar-icon"> -->
+                </div>
+            
+                <div class="age-at-the-date">
+                    <label for="">Age at the date of</label>
+                    <select name="month2" id="month2"></select>
+                    <select name="day2" id="day2"></select>
+                    <input name="year2" id="year2"></input>
+                    <!-- <img src="images/Group 14.png" alt="" class="calendar-icon"> -->
+                </div>
+                
+                <div class="recent-date">
+                   <input type="checkbox">
+                   <label for="recent-date">Recent date</label>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="calculate">Calculate</button>
+                </div>
+                     
+                <div class="vanilla-calendar">
+                   
+                </div>
+                <div class="vanilla-calendar-info">
+                    <span id="vanilla-calendar-info-date"></span>
+                </div>
 
-    <script src="script.js"></script>
+            </div>
+    
+            <div class="show-result">
+                <ul>
+                    <li>Age:</li>
+                    <li id="age-year-month-day">20 years 7 months 2 days</li>
+                    <li id="age-month-day">or 247 months 2 days</li>
+                    <li id="age-week-day">or 1074 weeks 1 days</li>
+                    <li id="age-day">or 7,519 days</li>
+                    <li id="age-hour">or 180,456 hours</li>
+                    <li id="age-minute">or 10,827,360 minutes</li>
+                    <li id="age-second">or 649,641,600 seconds</li>
+                </ul>
+            </div>    
+        </div>
+          
+    </div>
+      
+    <script src="script/vanilla-calendar.min.js"></script>
+    <script src="script/calendar.js"></script>
+    <script src="script/script.js"></script>
+
 </body>
 
 </html>

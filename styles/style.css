@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-body{
+    display: flex;
+    padding: 60px;
+}
+.input{
+    padding-right: 70px;
+}
+.age-calculator{
+   width: 1130px;
+   margin-top: 100px;
+   background: #F8F8F8;
+}
+.age-calculator .heading{
+    background-color: #336699;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 20px 0px 20px 60px;
+}
+.age-calculator .date-of-birth{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.date-of-birth #day, .date-of-birth #month, .date-of-birth #year,
+.age-at-the-date #day2, .age-at-the-date #month2, .age-at-the-date #year2
+{
+    background: #EFEFEF;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    width: 100px;
+    height: 60px;
+}
+.age-calculator input#year, 
+.age-calculator select#day,
+.age-at-the-date input#year2,
+.age-at-the-date select#day2
+{
+    padding-left: 30px;
+}
+input#calender {
+    width: 60px;
+    border: none;
+    background: #EFEFEF;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    height: 60px;
+}
+
+.age-at-the-date{
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.recent-date{
+    padding-left: 132px;
+    padding-top: 30px;
+}
+.age-calculator .btn{
+    padding-left: 132px;
+    padding-top: 50px;
+}
+.age-calculator .btn button{
+    background: #336699;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px 70px;
+}
+
+h1 {
+    align-items: flex-end;
+    color: #000;
+    display: flex;
+    font-size: 52px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 70px;
+    margin: 0 auto 15px;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    color: #000;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: 580px;
+    text-align: center;
+    width: 100%;
+}
+
+.vanilla-calendar {
+    border: 1px solid #efefef;
+    box-shadow: 0 0 10px -10px #000;
+    margin: 30px auto 10px;
+    width: 280px !important;
+    position: absolute;
+    top: 20%;
+    left: 58%;
+    display: none !important;
+}
+
+.vanilla-calendar-info {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 5px;
+    margin: 20px auto;
+    width: 280px;
+    border: 1px solid #efefef;
+    box-shadow: 0 0 10px -10px #000;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: black;
+}
+.age-calculator .calendar-icon{
+    position: relative;
+}
+
+.vanilla-calendar-info{
+    position: absolute;
+    top: 45%;
+    left: 58%;
+    display: none;
+}
+.show{
+    display: block !important;
+}
+.show-result{
+    border-left: 1px solid #C9C9C9;
+    padding-left: 30px;
+    display: none;
+}
+.show-result > ul {
+    list-style: none;
+}
+.show-result > ul li:first-child{
+    font-weight: 800;
+    font-size: 25px;
+}
+.show-result > ul li{
+    font-size: 20px;
+}
